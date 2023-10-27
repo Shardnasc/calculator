@@ -18,7 +18,17 @@ function appendToResult(value) {
     }
 }
 
-//Clear result
+function appendPercentage() {
+    if (currentInput === '') {
+        return; // Only calculate percentage if there's an input
+    }
+
+    const percentageValue = (parseFloat(currentInput) / 100).toString();
+    currentInput = percentageValue;
+    document.getElementById('result').value = percentageValue;
+}
+
+// Clear result
 function clearResult() {
     currentInput = '';
     hasDecimal = false;
