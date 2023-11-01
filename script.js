@@ -35,7 +35,7 @@ function clearResult() {
     hasDecimal = false;
     document.getElementById('result').value = '';
 }
-
+//Reults for the input
 function calculateResult() {
     try {
         currentInput = eval(currentInput).toString();
