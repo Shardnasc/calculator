@@ -1,6 +1,7 @@
+
 let currentInput = '';
 let hasDecimal = false;
-
+//Resulting output and allowing decimals
 function appendToResult(value) {
     if (value === '.' && hasDecimal) {
         return; // Allow only one decimal point
@@ -17,7 +18,7 @@ function appendToResult(value) {
         hasDecimal = true;
     }
 }
-
+//For %
 function appendPercentage() {
     if (currentInput === '') {
         return; // Only calculate percentage if there's an input
